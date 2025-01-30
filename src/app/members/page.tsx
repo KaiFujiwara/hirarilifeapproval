@@ -33,7 +33,7 @@ export default function Members() {
           <h1 className="text-4xl font-bold text-center mb-16">MEMBERS</h1>
           
           <div className="space-y-24 max-w-6xl mx-auto px-4 sm:px-8 md:px-0">
-            {members.map((member, index) => (
+            {members.map((member) => (
               <div 
                 key={member.name}
                 className={`flex flex-col gap-8 ${
