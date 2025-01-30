@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* 最初のビューポート - アニメーションテキスト */}
       <div className="h-screen flex justify-center items-center">
-        <div className="flex justify-between items-center space-x-4 px-4">
+        <div className="flex justify-between items-center space-x-4 px-4 -mt-28">
 
           <motion.div 
             initial={{ opacity: 0, x: -100 }}

@@ -62,8 +62,8 @@ export default function Members() {
                       : 'md:pl-12'
                   }`}>
                     <h2 className="text-3xl font-bold">{member.name}</h2>
-                    <p className="text-xl text-gray-600">{member.part}</p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-xl">{member.part}</p>
+                    <p className="leading-relaxed">
                       {member.description}
                     </p>
                   </div>

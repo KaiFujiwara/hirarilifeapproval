@@ -27,7 +27,7 @@ export default function Discography() {
 
               {/* 説明文 */}
               <div className="prose prose-lg max-w-none">
-                <p className="text-gray-700 leading-relaxed">
+                <p className="leading-relaxed">
                   2024年10月14日リリース。バンド初のオフィシャルミュージックビデオ。
                   都会の喧騒と静寂が交錯する中で、現代を生きる若者たちの心情を繊細に描いた楽曲。
                   プロデュースにはシーンで注目のダイナマイト山崎を迎え、バンドの新たな一面を引き出すことに成功している。

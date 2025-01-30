@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="flex gap-6">
             {/* X (Twitter) */}
             <a 
-              href="https://twitter.com/your-handle" 
+              href="https://x.com/hirarilife" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-75 transition-opacity"
@@ -19,7 +19,7 @@ export default function Footer() {
 
             {/* Instagram */}
             <a 
-              href="https://instagram.com/your-handle" 
+              href="https://www.instagram.com/hirari_life_approval" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-75 transition-opacity"
