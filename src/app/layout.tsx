@@ -1,7 +1,6 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Kaisei_Decol } from "next/font/google";
+import { Kaisei_Decol, Young_Serif } from "next/font/google";
 import "./globals.css";
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -23,6 +22,12 @@ const kaiseiDecol = Kaisei_Decol({
   variable: '--font-kaisei-decol',
 });
 
+const youngSerif = Young_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-young-serif',
+});
+
 export const metadata: Metadata = {
   title: "ひらり生活の稟議 Official WEB Site",
   description: "東京都を中心に活動するロックバンド「ひらり生活の稟議」の公式WEBサイトです。",
@@ -35,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${kaiseiDecol.variable} antialiased font-kaisei`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${kaiseiDecol.variable} ${youngSerif.variable} antialiased font-kaisei-young`}>
         {/* 背景画像とオーバーレイ */}
         <div className="fixed inset-0 z-[-1]">
           <div 
@@ -49,7 +54,9 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           <PageTransition>
             <Navigation />
-            {children}
+            <main className="pt-[64px] md:pt-0">
+              {children}
+            </main>
             <Footer />
           </PageTransition>
         </div>

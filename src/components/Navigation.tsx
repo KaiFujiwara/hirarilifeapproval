@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white p-4 relative z-50">
+    <nav className="fixed md:relative top-0 left-0 right-0 bg-black text-white p-4 z-50">
       {/* PC用ナビゲーション */}
       <div className="hidden md:flex justify-center gap-8">
         <Link href="/" className="hover:text-gray-300 transition-colors">HOME</Link>
